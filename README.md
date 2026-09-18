@@ -267,7 +267,7 @@ Expected Output:
 =======================================================================
  Developer  : BUDDHA S
  Reg. No.   : 25BAI11592
- Program    : B.Tech in Artificial Intelligence & Machine Learning
+ Program    : B.Tech Computer Science & Engineering (AI & ML)
  Evaluation : VITyarthi - Build Your Own Project
 =======================================================================
 
@@ -329,13 +329,13 @@ Total Records: 6
 +-------------------------------------------------------------------+
 | GRADE DISTRIBUTION BREAKDOWN                                      |
 +-------------------------------------------------------------------+
-| Grade A+ :  1 student ( 16.7%) [###                 ]            |
-| Grade A  :  1 student ( 16.7%) [###                 ]            |
-| Grade B  :  1 student ( 16.7%) [###                 ]            |
-| Grade C  :  1 student ( 16.7%) [###                 ]            |
+| Grade A+ :  1 students ( 16.7%) [###                 ]            |
+| Grade A  :  1 students ( 16.7%) [###                 ]            |
+| Grade B  :  1 students ( 16.7%) [###                 ]            |
+| Grade C  :  1 students ( 16.7%) [###                 ]            |
 | Grade D  :  0 students (  0.0%) [                    ]            |
-| Grade E  :  1 student ( 16.7%) [###                 ]            |
-| Grade F  :  1 student ( 16.7%) [###                 ]            |
+| Grade E  :  1 students ( 16.7%) [###                 ]            |
+| Grade F  :  1 students ( 16.7%) [###                 ]            |
 +===================================================================+
 
 🔮 9. Future Roadmap
