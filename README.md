@@ -14,7 +14,7 @@ VITyarthi - Build Your Own Project | Flipped Course Evaluation
 
 Author Information
 
-Student Name:   BUDDHA S
+Student Name: BUDDHA S
 Registration Number: 25BAI11592
 Degree Program: B.Tech in Artificial Intelligence & Machine Learning
 Department: School of Computing Science and Engineering (SCSE)
@@ -42,7 +42,7 @@ Record Deletion: Permanent removal of obsolete records with safety confirmation 
 
 🔍 2.2 Dual Search Engine
 
-Search by ID: Exact $O(n)$ search returning a student report card with subject breakdown and remarks.
+Search by ID: Exact $O(n)$ search returning an official academic report card with subject breakdown and remarks.
 
 Search by Name: Case-insensitive substring query capable of resolving partial names (e.g., searching "sh" matches "BUDDHA S" and "Aarav Sharma").
 
@@ -60,7 +60,7 @@ Pass/Fail Metrics: Computes exact passed count, failed count, and class-wide pas
 
 Subject-Wise Analysis: Generates average, highest, and lowest marks per discipline.
 
-Grade Distribution: Outputs a formatted ASCII distribution bar chart representing cohort performance.
+Visual Grade Distribution: Outputs a formatted ASCII distribution bar chart representing cohort performance.
 
 💾 2.5 Data Persistence & Recovery
 
@@ -105,7 +105,7 @@ Letter Grade
 
 Grade Point (GPA)
 
-Performance Classification
+Academic Performance Classification
 
 90.0% – 100.0%
 
@@ -177,7 +177,7 @@ Fail (Arrears / Needs Improvement)
 │   │   ├── Statistics.java               # Statistical analytics engine
 │   │   ├── TableFormatter.java           # ASCII grid rendering utility
 │   │   ├── FileStorageService.java       # CSV data persistence layer
-│   │   ├── DuplicateStudentException.java # Domain exception
+│   │   ├── DuplicateStudentException.java# Domain exception
 │   │   ├── StudentNotFoundException.java # Domain exception
 │   │   ├── InvalidStudentDataException.java # Domain exception
 │   │   ├── StudentValidationTest.java    # Automated unit testing suite
@@ -317,7 +317,7 @@ Total Records: 6
 | TOP PERFORMER & LOWEST SCORER                                     |
 +-------------------------------------------------------------------+
 | Batch Topper : #101  BUDDHA S          ( 96.17%, Grade A+ ) |
-| Lowest Score : #105  Ananya Patel        (45.83%, Grade E)        |
+| Lowest Score : #105  Ananya Patel            ( 45.83%, Grade E  ) |
 +-------------------------------------------------------------------+
 | SUBJECT-WISE PERFORMANCE SUMMARY                                  |
 +-------------------------------------------------------------------+
@@ -350,8 +350,8 @@ Multi-Role Authentication: Role-based access control (RBAC) separating faculty a
 
 📜 10. Academic Declaration & Acknowledgements
 
-I hereby declare that this project titled "Student Result Management System (SRMS)" is my original work submitted in partial fulfillment of the academic requirements for the VITyarthi - Build Your Own Project evaluation at Vellore Institute of Technology (VIT), Bhopal.
+I hereby declare that this project titled "Student Result Management System (SRMS)" is my original work submitted in partial fulfillment of the academic requirements for the course evaluation under the VITyarthi - Build Your Own Project initiative at Vellore Institute of Technology (VIT), Bhopal.
 
 Author: BUDDHA S
 Registration Number: 25BAI11592
-Institution: VIT Bhopal University 
+Institution: VIT Bhopal University
