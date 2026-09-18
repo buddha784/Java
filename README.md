@@ -2,169 +2,108 @@
 
 <img src="assets/vit_bhopal_logo.png" alt="VIT Bhopal University Logo" width="450"/>
 
-Student Result Management System (SRMS)
+# Student Result Management System (SRMS)
+### VITyarthi - Build Your Own Project | Flipped Course Evaluation
 
-VITyarthi - Build Your Own Project | Flipped Course Evaluation
+[![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2023-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Architecture](https://img.shields.io/badge/Architecture-Layered%20%2F%20OOP-007ACC?style=for-the-badge)](https://en.wikipedia.org/wiki/Object-oriented_programming)
+[![Build](https://img.shields.io/badge/Build-Passing%20(100%25)-success?style=for-the-badge)](https://github.com/)
+[![Tests](https://img.shields.io/badge/Unit%20Tests-12%2F12%20Passed-brightgreen?style=for-the-badge)](https://github.com/)
+[![License](https://img.shields.io/badge/License-Academic%20Evaluation-blue?style=for-the-badge)](LICENSE)
 
+---
 
+### **Author Information**
+**Student Name:**   BUDDHA S
+**Registration Number:** `25BAI11592`  
+**Degree Program:** B.Tech in Artificial Intelligence & Machine Learning  
+**Department:** School of Computing Science and Engineering (SCSE)  
+**Institution:** Vellore Institute of Technology (VIT), Bhopal  
 
-
-
-
-
-Author Information
-
-Student Name: BUDDHA S
-Registration Number: 25BAI11592
-Degree Program: B.Tech in Artificial Intelligence & Machine Learning
-Department: School of Computing Science and Engineering (SCSE)
-Institution: Vellore Institute of Technology (VIT), Bhopal
+---
 
 </div>
 
-📌 1. Project Overview
+## 📌 1. Project Overview
 
-The Student Result Management System (SRMS) is an enterprise-grade, object-oriented console application developed in Java to automate the end-to-end academic evaluation lifecycle for educational institutions. Designed according to industrial Clean Code standards and SOLID design principles, the application eliminates human computation errors, enforces strict data validation constraints, provides deep batch performance analytics, and persists data reliably to secondary storage.
+The **Student Result Management System (SRMS)** is an enterprise-grade, object-oriented console application developed in Java to automate the end-to-end academic evaluation lifecycle for educational institutions. Designed according to industrial Clean Code standards and SOLID design principles, the application eliminates human computation errors, enforces strict data validation constraints, provides deep batch performance analytics, and persists data reliably to secondary storage.
 
-The system manages student demographic profiles and academic performance across core curriculum subjects (Mathematics, Java Programming, and Physics). It features a robust interactive Command Line Interface (CLI) backed by mathematical computation engines, defensive exception handlers, and an ASCII reporting module.
+The system manages student demographic profiles and academic performance across core curriculum subjects (**Mathematics**, **Java Programming**, and **Physics**). It features a robust interactive Command Line Interface (CLI) backed by mathematical computation engines, defensive exception handlers, and an ASCII reporting module.
 
-🚀 2. Key Features
+---
 
-🎓 2.1 Academic Record Management (CRUD)
+## 🚀 2. Key Features
 
-Enrollment: Register new students with automatic duplicate ID detection and boundary validation.
+### 🎓 2.1 Academic Record Management (CRUD)
+- **Enrollment**: Register new students with automatic duplicate ID detection and boundary validation.
+- **Record Retrieval**: View individual comprehensive student report cards or full-batch tabular rosters.
+- **Marks Updating**: Safely modify subject scores post re-evaluation with instantaneous grade recalculation.
+- **Record Deletion**: Permanent removal of obsolete records with safety confirmation prompts.
 
-Record Retrieval: View individual comprehensive student report cards or full-batch tabular rosters.
+### 🔍 2.2 Dual Search Engine
+- **Search by ID**: Exact $O(n)$ search returning an official academic report card with subject breakdown and remarks.
+- **Search by Name**: Case-insensitive substring query capable of resolving partial names (e.g., searching `"sh"` matches `"BUDDHA S"` and `"Aarav Sharma"`).
 
-Marks Updating: Safely modify subject scores post re-evaluation with instantaneous grade recalculation.
+### 📊 2.3 University Standard Grading Engine
+- Converts percentage aggregates into institutional letter grades (`A+` to `F`) and calculates Grade Point Average (`GPA` on a 10.0 scale).
+- Implements subject-level fail checks: failing any individual subject ($< 40.0$) designates an overall result of `FAIL` and letter grade `F`.
 
-Record Deletion: Permanent removal of obsolete records with safety confirmation prompts.
+### 📈 2.4 Analytical & Statistical Dashboard
+- **Batch Extrema**: Identifies the Class Topper and Lowest Scorer.
+- **Pass/Fail Metrics**: Computes exact passed count, failed count, and class-wide pass percentage.
+- **Subject-Wise Analysis**: Generates average, highest, and lowest marks per discipline.
+- **Visual Grade Distribution**: Outputs a formatted ASCII distribution bar chart representing cohort performance.
 
-🔍 2.2 Dual Search Engine
+### 💾 2.5 Data Persistence & Recovery
+- Complete file I/O integration via `FileStorageService`.
+- Serializes and deserializes records to CSV (`students_data.csv`).
+- Corrupt row fault tolerance ensuring malformed CSV entries are safely skipped without halting execution.
 
-Search by ID: Exact $O(n)$ search returning an official academic report card with subject breakdown and remarks.
+### 🧪 2.6 Self-Contained Automated Test Suite
+- Built-in `StudentValidationTest` class testing 12 distinct functional scenarios covering constructor constraints, calculation accuracy, exception handling, and file roundtrips.
 
-Search by Name: Case-insensitive substring query capable of resolving partial names (e.g., searching "sh" matches "BUDDHA S" and "Aarav Sharma").
+---
 
-📊 2.3 University Standard Grading Engine
+## 🏛️ 3. System Architecture & OOP Principles
 
-Converts percentage aggregates into institutional letter grades (A+ to F) and calculates Grade Point Average (GPA on a 10.0 scale).
+The project adopts a decoupled **Three-Tier Architecture**:
 
-Implements subject-level fail checks: failing any individual subject ($< 40.0$) designates an overall result of FAIL and letter grade F.
-
-📈 2.4 Analytical & Statistical Dashboard
-
-Batch Extrema: Identifies the Class Topper and Lowest Scorer.
-
-Pass/Fail Metrics: Computes exact passed count, failed count, and class-wide pass percentage.
-
-Subject-Wise Analysis: Generates average, highest, and lowest marks per discipline.
-
-Visual Grade Distribution: Outputs a formatted ASCII distribution bar chart representing cohort performance.
-
-💾 2.5 Data Persistence & Recovery
-
-Complete file I/O integration via FileStorageService.
-
-Serializes and deserializes records to CSV (students_data.csv).
-
-Corrupt row fault tolerance ensuring malformed CSV entries are safely skipped without halting execution.
-
-🧪 2.6 Self-Contained Automated Test Suite
-
-Built-in StudentValidationTest class testing 12 distinct functional scenarios covering constructor constraints, calculation accuracy, exception handling, and file roundtrips.
-
-🏛️ 3. System Architecture & OOP Principles
-
-The project adopts a decoupled Three-Tier Architecture:
-
+```mermaid
 graph TD
     UI[Presentation Tier: Main.java & TableFormatter.java] --> Service[Service & Logic Tier: StudentManager.java & Statistics.java]
     Service --> Logic[Computation Engine: ResultCalculator.java]
     Service --> Model[Domain Entity: Student.java]
     Service --> Persistence[Storage Tier: FileStorageService.java]
     Persistence --> Disk[(Secondary Storage: students_data.csv)]
+```
 
-Applied Object-Oriented Principles:
+### Applied Object-Oriented Principles:
+1. **Encapsulation**: All fields in `Student` are private. Access is strictly controlled through validated getters and setters.
+2. **Abstraction & Utility Pattern**: Classes such as `ResultCalculator`, `Statistics`, and `TableFormatter` have private constructors and expose clean static utility interfaces.
+3. **Data Integrity**: Defensive copies and unmodifiable collections (`Collections.unmodifiableList`) prevent accidental state mutation from external callers.
+4. **Custom Exception Hierarchy**: Explicit domain exceptions (`DuplicateStudentException`, `StudentNotFoundException`, `InvalidStudentDataException`) provide structured, descriptive error propagation.
 
-Encapsulation: All fields in Student are private. Access is strictly controlled through validated getters and setters.
+---
 
-Abstraction & Utility Pattern: Classes such as ResultCalculator, Statistics, and TableFormatter have private constructors and expose clean static utility interfaces.
-
-Data Integrity: Defensive copies and unmodifiable collections (Collections.unmodifiableList) prevent accidental state mutation from external callers.
-
-Custom Exception Hierarchy: Explicit domain exceptions (DuplicateStudentException, StudentNotFoundException, InvalidStudentDataException) provide structured, descriptive error propagation.
-
-📊 4. Grading Scheme & Evaluation Metrics
+## 📊 4. Grading Scheme & Evaluation Metrics
 
 The system enforces the standard university 10-point GPA scale:
 
-Percentage Range
+| Percentage Range | Letter Grade | Grade Point (GPA) | Academic Performance Classification |
+| :---: | :---: | :---: | :--- |
+| **90.0% – 100.0%** | `A+` | 10.0 | Outstanding (First Class with Distinction) |
+| **80.0% – 89.9%** | `A` | 9.0 | Excellent (First Class) |
+| **70.0% – 79.9%** | `B` | 8.0 | Very Good (First Class) |
+| **60.0% – 69.9%** | `C` | 7.0 | Good (Second Class) |
+| **50.0% – 59.9%** | `D` | 6.0 | Average (Second Class) |
+| **40.0% – 49.9%** | `E` | 5.0 | Marginal Pass |
+| **< 40.0% (or fail any subject)** | `F` | 0.0 | Fail (Arrears / Needs Improvement) |
 
-Letter Grade
+---
 
-Grade Point (GPA)
+## 📂 5. Project Directory Structure
 
-Academic Performance Classification
-
-90.0% – 100.0%
-
-A+
-
-10.0
-
-Outstanding (First Class with Distinction)
-
-80.0% – 89.9%
-
-A
-
-9.0
-
-Excellent (First Class)
-
-70.0% – 79.9%
-
-B
-
-8.0
-
-Very Good (First Class)
-
-60.0% – 69.9%
-
-C
-
-7.0
-
-Good (Second Class)
-
-50.0% – 59.9%
-
-D
-
-6.0
-
-Average (Second Class)
-
-40.0% – 49.9%
-
-E
-
-5.0
-
-Marginal Pass
-
-< 40.0% (or fail any subject)
-
-F
-
-0.0
-
-Fail (Arrears / Needs Improvement)
-
-📂 5. Project Directory Structure
-
+```text
 .
 ├── assets/
 │   ├── vit_bhopal_logo.png       # High-resolution university logo for documentation
@@ -190,52 +129,62 @@ Fail (Arrears / Needs Improvement)
 ├── run.sh                        # One-click compilation and execution script
 ├── test.sh                       # One-click unit test runner script
 └── README.md                     # Main GitHub documentation
+```
 
-💻 6. Installation & Execution Guide
+---
 
-Prerequisites
+## 💻 6. Installation & Execution Guide
 
-Java Development Kit (JDK): Version 17, 21, or newer.
+### Prerequisites
+- **Java Development Kit (JDK)**: Version 17, 21, or newer.
+- Verify installation:
+  ```bash
+  javac -version
+  java -version
+  ```
 
-Verify installation:
-
-javac -version
-java -version
-
-Step 1: Clone or Navigate to the Project
-
+### Step 1: Clone or Navigate to the Project
+```bash
 git clone <repository-url>
 cd <repository-directory>
+```
 
-Step 2: Compile the Java Source Files
-
+### Step 2: Compile the Java Source Files
 Navigate to the source directory and compile:
-
+```bash
 cd "buh-main/student result management"
 javac *.java
+```
 
-Step 3: Run the Application
-
+### Step 3: Run the Application
+```bash
 java Main
+```
 
-(Optional Quick Run from Project Root):
-
+*(Optional Quick Run from Project Root)*:
+```bash
 chmod +x run.sh && ./run.sh
+```
 
-🧪 7. Running the Automated Tests
+---
+
+## 🧪 7. Running the Automated Tests
 
 To verify mathematical computations, boundary checks, duplicate prevention, and file persistence:
 
+```bash
 cd "buh-main/student result management"
 javac StudentValidationTest.java
 java StudentValidationTest
+```
 
-(Optional Quick Test from Project Root):
-
+*(Optional Quick Test from Project Root)*:
+```bash
 chmod +x test.sh && ./test.sh
+```
 
-Expected Output:
-
+### Expected Output:
+```text
 =======================================================================
      RUNNING AUTOMATED UNIT & VALIDATION TESTS FOR SRMS
 =======================================================================
@@ -255,11 +204,14 @@ Expected Output:
  TEST SUMMARY: 12 / 12 Tests Passed (100.0% Success Rate)
 =======================================================================
 [SUCCESS] ALL VERIFICATION TESTS PASSED SUCCESSFULLY!
+```
 
-🖥️ 8. Interactive CLI Walkthrough & Sample Output
+---
 
-8.1 Welcome Banner & Main Menu
+## 🖥️ 8. Interactive CLI Walkthrough & Sample Output
 
+### 8.1 Welcome Banner & Main Menu
+```text
 =======================================================================
        STUDENT RESULT MANAGEMENT SYSTEM (SRMS) - ACADEMIC SUITE       
                     VELLORE INSTITUTE OF TECHNOLOGY                   
@@ -287,9 +239,10 @@ Expected Output:
   11) Exit Application
 +--------------------------------------------------------+
 Select an option [1-11]: 
+```
 
-8.2 Formatted Tabular Report (Option 2)
-
+### 8.2 Formatted Tabular Report (`Option 2`)
+```text
 +------+----------------------+-------+-------+---------+-------+------------+-------+------+--------+
 | ID   | Student Name         | Maths | Java  | Physics | Total | Percentage | Grade | GPA  | Status |
 +------+----------------------+-------+-------+---------+-------+------------+-------+------+--------+
@@ -301,9 +254,10 @@ Select an option [1-11]:
 | 106  | Vikram Singh         |  35.0 |  70.0 |    65.0 | 170.0 |     56.67% | F     |  0.0 | FAIL   |
 +------+----------------------+-------+-------+---------+-------+------------+-------+------+--------+
 Total Records: 6
+```
 
-8.3 Analytical Performance Dashboard (Option 7)
-
+### 8.3 Analytical Performance Dashboard (`Option 7`)
+```text
 +===================================================================+
 |             ACADEMIC PERFORMANCE & ANALYTICS DASHBOARD            |
 |                      VIT BHOPAL UNIVERSITY                        |
@@ -337,21 +291,23 @@ Total Records: 6
 | Grade E  :  1 students ( 16.7%) [###                 ]            |
 | Grade F  :  1 students ( 16.7%) [###                 ]            |
 +===================================================================+
+```
 
-🔮 9. Future Roadmap
+---
 
-Graphical User Interface (GUI): Implement a modern JavaFX / Swing desktop client.
+## 🔮 9. Future Roadmap
 
-Relational Database Migration: Transition storage from CSV to SQLite / PostgreSQL using JDBC.
+- [ ] **Graphical User Interface (GUI)**: Implement a modern JavaFX / Swing desktop client.
+- [ ] **Relational Database Migration**: Transition storage from CSV to SQLite / PostgreSQL using JDBC.
+- [ ] **RESTful Web Services**: Expose endpoints via Spring Boot for mobile and web integration.
+- [ ] **Multi-Role Authentication**: Role-based access control (RBAC) separating faculty and student views.
 
-RESTful Web Services: Expose endpoints via Spring Boot for mobile and web integration.
+---
 
-Multi-Role Authentication: Role-based access control (RBAC) separating faculty and student views.
+## 📜 10. Academic Declaration & Acknowledgements
 
-📜 10. Academic Declaration & Acknowledgements
+I hereby declare that this project titled **"Student Result Management System (SRMS)"** is my original work submitted in partial fulfillment of the academic requirements for the course evaluation under the **VITyarthi - Build Your Own Project** initiative at **Vellore Institute of Technology (VIT), Bhopal**.
 
-I hereby declare that this project titled "Student Result Management System (SRMS)" is my original work submitted in partial fulfillment of the academic requirements for the course evaluation under the VITyarthi - Build Your Own Project initiative at Vellore Institute of Technology (VIT), Bhopal.
-
-Author: BUDDHA S
-Registration Number: 25BAI11592
-Institution: VIT Bhopal University
+**Author:** BUDDHA S  
+**Registration Number:** `25BAI11592`  
+**Institution:** VIT Bhopal University  
